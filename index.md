@@ -83,10 +83,10 @@ git push heroku
 ```bash
 heroku run cat temp/var/lib/tor/hidden_service/hostname
 ```
-![Image](output.jpg)
+![Image](https://raw.githubusercontent.com/sumithemmadi/Tor-Onion-Service-On-Heroku/main/output.jpg)
 ## Get onion link on heroku app
 -  If you still can't find your .onion link. </br> Open your heroku app `https://App-Name.herokuapp.com` and click on `show my .onion link`.
-<!-- ![alt text](https://github.com/sumithemmadi/Tor-Onion-Service-On-Heroku/blob/main/output.jpg) -->
+<!-- ![image](https://raw.githubusercontent.com/sumithemmadi/Tor-Onion-Service-On-Heroku/main/output.jpg) -->
 
 ### My app
 
