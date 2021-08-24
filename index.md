@@ -4,7 +4,6 @@
 ![IMG_20210822_194228.jpg](IMG_20210822_194228.jpg)
 -->
 
-
 # Ouick Deploy to heroku
 - 1 . To  host your website in dark web  with one click and run server on heroku.
 - 2 . Click below `Deploy to Heroku` Button.
@@ -59,8 +58,8 @@ heroku apps:create App-Name
 -  `heroku apps:create App-Name` this command creates the application as well as a git remote, that you can use to push your code to Heroku:
  
 -  _Note: replace `App-Name` with  any other name._
-```bash
-$ heroku apps:create tor-onion-service-on-heroku
+```diff
+- $ heroku apps:create tor-onion-service-on-heroku
 Creating ⬢ tor-onion-service-on-heroku... done
 https://tor-onion-service-on-heroku.herokuapp.com/ | https://git.heroku.com/tor-onion-service-on-heroku.git
 ```
