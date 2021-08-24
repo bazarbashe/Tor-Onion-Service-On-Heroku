@@ -59,7 +59,7 @@ heroku apps:create App-Name
  
 -  _Note: replace `App-Name` with  any other name._
 ```diff
-- $ heroku apps:create tor-onion-service-on-heroku
++ $ heroku apps:create tor-onion-service-on-heroku
 Creating ⬢ tor-onion-service-on-heroku... done
 https://tor-onion-service-on-heroku.herokuapp.com/ | https://git.heroku.com/tor-onion-service-on-heroku.git
 ```
