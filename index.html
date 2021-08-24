@@ -1,0 +1,107 @@
+<h1 id="tor-onion-service-on-heroku">Tor-Onion-Service-On-Heroku</h1>
+<p><img src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&amp;logo=heroku&amp;logoColor=white" alt="image"> <img src="https://img.shields.io/badge/Tor-7D4698?style=for-the-badge&amp;logo=Tor-Browser&amp;logoColor=white" alt="image">
+<!--
+![IMG_20210822_194228.jpg](IMG_20210822_194228.jpg)
+--></p>
+<h1 id="ouick-deploy-to-heroku">Ouick Deploy to heroku</h1>
+<ul>
+<li>1 . To  host your website in dark web  with one click and run server on heroku.</li>
+<li><p>2 . Click below <code>Deploy to Heroku</code> Button.</p>
+<p>  <a href="https://heroku.com/deploy?template=https://github.com/sumithemmadi/Tor-Onion-Service-On-Heroku"><img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy"></a>
+  </br> <em>Note : Deploy with  heroku Deploy  button will host a demo webpage, you  can not use your html file.To host your own webpage goto  <b><a href="https://github.com/sumithemmadi/Tor-Onion-Service-On-Heroku/blob/main/README.md#manually-deploy-to-heroku">Manually Deploy to Heroku</a>
+</b> Session</em></p>
+</li>
+<li>3 . You will be navigated to <a href="https://dashboard.heroku.com">Heroku Dashboard</a>. Enter app name in <code>App name</code> field and click <code>Deploy app</code> button.</li>
+<li>4 . Now your app is accessible over <code>Tor</code>.</li>
+<li>5 . To  know you .onion address open your heroku app <code>https://App-Name.herokuapp.com</code> and click on <code>show my .onion link</code>.</br></br><pre><code>_Note :- Since,heroku has an ephemerals <span class="hljs-keyword">file</span> system that <span class="hljs-keyword">is</span> destroyed every <span class="hljs-built_in">time</span> <span class="hljs-keyword">when</span> your app restart<span class="hljs-symbol">'s</span>.So your application will <span class="hljs-keyword">generate</span> a <span class="hljs-keyword">new</span> .onion link everytime <span class="hljs-keyword">when</span> your app restarts.&lt;/br&gt;<span class="hljs-keyword">To</span> <span class="hljs-keyword">use</span> your custom permanent onion link go <span class="hljs-keyword">to</span> &lt;b&gt;[Manually Deploy <span class="hljs-keyword">to</span> Heroku](https://github.com/sumithemmadi/Tor-Onion-Service-<span class="hljs-keyword">On</span>-Heroku/blob/main/README.md#manually-deploy-<span class="hljs-keyword">to</span>-heroku)&lt;/b&gt;
+</code></pre></li>
+</ul>
+<h1 id="manually-deploy-to-heroku">Manually Deploy to Heroku</h1>
+<h3 id="prerequisites">Prerequisites</h3>
+<p><img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&amp;logo=nodedotjs&amp;logoColor=white" alt="image"> <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&amp;logo=php&amp;logoColor=white" alt="image"> <img src="https://img.shields.io/badge/git-000000?style=for-the-badge&amp;logo=git&amp;logoColor=white" alt="image"> <img src="https://img.shields.io/badge/Tor-7D4698?style=for-the-badge&amp;logo=Tor-Browser&amp;logoColor=white" alt="image"> </p>
+<ul>
+<li>1 . <code>nodejs</code></li>
+<li>2 . <code>tor</code> - v3</li>
+<li>3 . <code>php</code></li>
+<li>4 . <code>git</code></li>
+<li>5 . <code>Heroku CLI</code></li>
+</ul>
+<h3 id="install-heroku">Install Heroku</h3>
+<p><img src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&amp;logo=heroku&amp;logoColor=white" alt="image"></p>
+<ul>
+<li>1 . Create an account on  <strong><a href="https://heroku.com">https://heroku.com</a></strong>.</li>
+<li>2 . Install the Heroku CLI on your computer: <br/><strong><a href="https://devcenter.heroku.com/articles/heroku-cli">https://devcenter.heroku.com/articles/heroku-cli</a></strong>. 
+<br/>Check that you have the <code>heroku-cli</code> installed by checking the version number in your terminal:<pre><code class="lang-bash">heroku <span class="hljs-comment">--version</span>
+</code></pre>
+</li>
+<li>3 . Connect the <code>Heroku CLI</code> to your account by writing the following command in your terminal and follow the instructions on the command line:<pre><code class="lang-bash"><span class="hljs-attribute">heroku login</span>
+</code></pre>
+</li>
+</ul>
+<h3 id="quick-start">Quick Start</h3>
+<ul>
+<li><p>1 . Create a new project, for example in my case  <code>Tor-Onion-Service-On-Heroku</code>.</p>
+</li>
+<li><p>2 . Clone the repo with below command</p>
+<pre><code class="lang-bash">git <span class="hljs-keyword">clone</span> <span class="hljs-title">https</span>://github.com/sumithemmadi/Tor-Onion-Service-On-Heroku.git
+cd Tor-Onion-Service-On-Heroku
+</code></pre>
+</li>
+<li>3 . Create a heroku application<pre><code class="lang-bash">heroku apps:<span class="hljs-keyword">create</span> App-<span class="hljs-keyword">Name</span>
+</code></pre>
+</li>
+<li><p><code>heroku apps:create App-Name</code> this command creates the application as well as a git remote, that you can use to push your code to Heroku:</p>
+</li>
+<li><p><em>Note: replace <code>App-Name</code> with  any other name.</em>
+```diff</p>
+</li>
+<li>$ heroku apps:create tor-onion-service-on-heroku
+Creating ⬢ tor-onion-service-on-heroku... done
+<a href="https://tor-onion-service-on-heroku.herokuapp.com/">https://tor-onion-service-on-heroku.herokuapp.com/</a> | <a href="https://git.heroku.com/tor-onion-service-on-heroku.git">https://git.heroku.com/tor-onion-service-on-heroku.git</a>
+```</li>
+<li>4 . Now add two buildpacks <code>heroku-community/apt</code> and <code>heroku/php</code> to you application .To add these buildpacks enter  below commands in terminal<pre><code>Adding `heroku/php` buildpack will <span class="hljs-built_in">run</span> php <span class="hljs-keyword">on</span> your heroku <span class="hljs-built_in">application</span>.
+</code></pre></li>
+</ul>
+<pre><code class="lang-bash">heroku <span class="hljs-string">buildpacks:</span>set <span class="hljs-string">https:</span><span class="hljs-comment">//github.com/heroku/heroku-buildpack-php</span>
+</code></pre>
+<ul>
+<li>5 . Add another <code>heroku-community/apt</code> buildpack to your  heroku application .This buildpack is used to install packages like  <code>tor</code> and <code>nodejs</code> in heroku application which are mentioned in  <code>Aptfile</code> file.</li>
+</ul>
+<pre><code class="lang-bash">heroku buildpacks:<span class="hljs-keyword">add</span><span class="bash"> --index 1 heroku-community/apt</span>
+</code></pre>
+<ul>
+<li><p>6 . Copy your website file&#39;s to the folder <code>site</code> folder </br></p>
+<pre><code>eg :- <span class="hljs-keyword">index</span>.html,<span class="hljs-keyword">index</span>.php [<span class="hljs-keyword">default</span>=<span class="hljs-keyword">index</span>.html]
+</code></pre></li>
+<li><p>7 . Copy the following files to <code>temp/var/lib/tor/hidden_service</code> dir</br> </p>
+<ul>
+<li><code>hostname</code></li>
+<li><code>hs_ed25519_public_key</code></li>
+<li><code>hs_ed25519_secret_key</code></li>
+</ul>
+</li>
+<li><p>If you don&#39;t know where these files stored refer to <strong><a href="https://2019.www.torproject.org/docs/tor-onion-service">https://2019.www.torproject.org/docs/tor-onion-service</a></strong></p>
+</li>
+</ul>
+<ul>
+<li><p>8 . Deploy your changes to heroku</p>
+<pre><code class="lang-bash">git <span class="hljs-keyword">add</span><span class="bash"> .
+</span>git commit -am <span class="hljs-string">"Tor Onion Service On Heroku"</span>
+git push heroku
+</code></pre>
+</li>
+<li><p><em>Now your app is accessible over Tor</em></p>
+<h2 id="to-know-your-onion-address">To know your .onion address</h2>
+</li>
+<li>Run below command to know your onion address.<pre><code class="lang-bash">heroku run cat temp/var/<span class="hljs-class"><span class="hljs-keyword">lib</span>/<span class="hljs-title">tor</span>/<span class="hljs-title">hidden_service</span>/<span class="hljs-title">hostname</span></span>
+</code></pre>
+<img src="https://raw.githubusercontent.com/sumithemmadi/Tor-Onion-Service-On-Heroku/main/output.jpg" alt="Image">
+#<h2 id="get-onion-link-on-heroku-app">Get onion link on heroku app</h2>
+</li>
+<li>If you still can&#39;t find your .onion link. </br> Open your heroku app </br><code>https://App-Name.herokuapp.com</code> and click on <code>show my .onion link</code>.<!-- ![alt text](output.jpg) -->
+</li>
+</ul>
+<h3 id="my-app">My app</h3>
+<ul>
+<li><strong><a href="https://tor-onion-service-on-heroku.herokuapp.com/">https://tor-onion-service-on-heroku.herokuapp.com/</a></strong></li>
+</ul>
