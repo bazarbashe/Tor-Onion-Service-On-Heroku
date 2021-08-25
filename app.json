@@ -7,7 +7,17 @@
     "tor",
     "heroku tor"
   ],
-  "addons": [],
+  "addons": [    
+    {
+      "plan": "heroku-postgresql",
+      "options": {
+        "version": "9.5"
+        }
+    }
+    "jawsdb",
+    "mailgun",
+    "cloudinary"
+],
   "env": {},
   "website": "https://sumithemmadi.github.io/Tor-Onion-Service-On-Heroku/",
   "repository": "https://github.com/sumithemmadi/Tor-Onion-Service-On-Heroku",
